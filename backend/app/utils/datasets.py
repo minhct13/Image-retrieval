@@ -4,8 +4,8 @@ from PIL import Image
 import torch
 import torch.utils.data as data
 
-
-
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def cid2filename(cid, prefix):
     """
